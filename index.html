@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas Chocolatosas</title>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-color: #FDF4E3;
+            font-family: Arial, sans-serif;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .title {
+            color: #523513;
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 0.75rem;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card-image-container {
+            position: relative;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+        }
+
+        .card-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .card:hover .card-image {
+            transform: scale(1.1);
+        }
+
+        .card-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .card:hover .card-overlay {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .card-content {
+            padding: 1rem;
+        }
+
+        .card-title {
+            color: #523513;
+            font-size: 1.25rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .card-buttons {
+            display: flex;
+            gap: 0.5rem;
+            justify-content: center;
+        }
+
+        .button {
+            background-color: #523513;
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #422804;
+        }
+
+        .download-icon {
+            width: 1rem;
+            height: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">☕︎ Recetas Chocolatosas 𐂐</h1>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <div class="card-image-container">
+                    <img class="card-image" src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?auto=format&fit=crop&q=80&w=400&h=300" alt="Barra de Chocolate">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Barra de Chocolate</h2>
+                    <div class="card-buttons">
+                        <a href="Barra de Chocolate.mp4" class="button" target="_blank">Ver Receta</a>
+                        <a href="Barra de Chocolate.mp4" download="Receta_Barra_Chocolate.mp4" class="button">
+                            <span>Descargar</span>
+                            <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image-container">
+                    <img class="card-image" src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51?auto=format&fit=crop&q=80&w=400&h=300" alt="Volcán de Chocolate">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Volcán de Chocolate</h2>
+                    <div class="card-buttons">
+                        <a href="Volcán de chocolate.mp4" class="button" target="_blank">Ver Receta</a>
+                        <a href="Volcán de chocolate.mp4" class="button" download>
+                            <span>Descargar</span>
+                            <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image-container">
+                    <img class="card-image" src="https://images.unsplash.com/photo-1541783245831-57d6fb0926d3?auto=format&fit=crop&q=80&w=400&h=300" alt="Mousse de Chocolate 1">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Mousse de Chocolate 1</h2>
+                    <div class="card-buttons">
+                        <a href="Mousse de chocolate 1.mp4" class="button" target="_blank">Ver Receta</a>
+                        <a href="Mousse de chocolate 1.mp4" class="button" download>
+                            <span>Descargar</span>
+                            <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image-container">
+                    <img class="card-image" src="https://images.unsplash.com/photo-1611329695518-1763319f3551?auto=format&fit=crop&q=80&w=400&h=300" alt="Mousse de Chocolate 2">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Mousse de Chocolate 2</h2>
+                    <div class="card-buttons">
+                        <a href="Mousse de chocolate 2.mp4" class="button" target="_blank">Ver Receta</a>
+                        <a href="Mousse de chocolate 2.mp4" class="button" download>
+                            <span>Descargar</span>
+                            <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image-container">
+                    <img class="card-image" src="https://images.unsplash.com/photo-1548907040-4d2be3c89e19?auto=format&fit=crop&q=80&w=400&h=300" alt="Trufas">
+                    <div class="card-overlay"></div>
+                </div>
+                <div class="card-content">
+                    <h2 class="card-title">Trufas</h2>
+                    <div class="card-buttons">
+                        <a href="Trufas.mp4" class="button" target="_blank">Ver Receta</a>
+                        <a href="Trufas.mp4" class="button" download>
+                            <span>Descargar</span>
+                            <svg class="download-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
